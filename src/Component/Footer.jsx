@@ -2,6 +2,7 @@ import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoBookOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -35,10 +36,10 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-400 text-sm">
-            <li><a href="#" className="hover:text-white">Home</a></li>
-            <li><a href="#" className="hover:text-white">About</a></li>
-            <li><a href="#" className="hover:text-white">Contact</a></li>
-            <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
+            <li><Link to="/" className="hover:text-white">Home</Link></li>
+            <li><Link to="/about" className="hover:text-white">About</Link></li>
+            <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
+            <li><Link to="/privacy" className="hover:text-white">Privacy</Link></li>
           </ul>
         </div>
 

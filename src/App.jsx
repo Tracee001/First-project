@@ -4,9 +4,10 @@ import Contact from './Pages/Contact';
 import About from './Pages/About';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './Component/Layout';
-import Effects from './Pages/Effects';
 import Api from './Pages/Api'; 
 import UserView from './Pages/UserView';
+import ScrollToTop from './Pages/ScrollToTop';
+import Privacy from './Pages/Privacy';
 // import UserList from './UserList'; // ✅ Add this line
 
 function App() {
@@ -20,10 +21,11 @@ function App() {
           <Route path='user/:id' element={<UserView />} />
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
-          <Route path='effects' element={<Effects />} />
+          <Route path='privacy' element={<Privacy />} />
           <Route path='api' element={<Api />} />
         </Route>
       </Routes>
+      <ScrollToTop />
     </div>
   );
 }

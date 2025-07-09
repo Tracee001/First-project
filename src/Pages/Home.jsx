@@ -17,6 +17,21 @@ function Home() {
         a world of knowledge and inspiration.
       </p>
 
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-10 px-4">
+        <div className="bg-white rounded-lg shadow p-6 text-center w-full max-w-xs">
+          <h2 className="text-3xl font-bold text-blue-600">100</h2>
+          <p className="text-gray-600 mt-2">Total Posts</p>
+        </div>
+        <div className="bg-white rounded-lg shadow p-6 text-center w-full max-w-xs">
+          <h2 className="text-3xl font-bold text-green-600">50+</h2>
+          <p className="text-gray-600 mt-2">Writers</p>
+        </div>
+        <div className="bg-white rounded-lg shadow p-6 text-center w-full max-w-xs">
+          <h2 className="text-3xl font-bold text-purple-600">1M+</h2>
+          <p className="text-gray-600 mt-2">Readers</p>
+        </div>
+      </div>
+
         <Api/>
     </div>
   );
